@@ -72,6 +72,21 @@ line-height: 1.5;
  display: block;
  padding-top: 24px;
  padding-bottom: 24px;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current{
+position: relative;
+color:#404bbf; 
+}
+.current::after{
+content: "" ;
+position: absolute;
+left: 0;
+bottom: -1px;
+background-color: #404bbf;
+border-radius: 2px;
+height: 4px;
+width: 100%;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -91,6 +106,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -106,6 +122,9 @@ max-width: 1440px;
 margin-left: auto;
 margin-right: auto;
 padding: 188px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/people-office-hero.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .hero-title{
@@ -155,6 +174,17 @@ overflow: hidden;
 .benefits-list-item{
 width: calc((100% - 72px) / 4);
 }
+.benefits-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+}
 .benefits-title{
 font-weight: 500;
 font-size: 20px;
@@ -183,20 +213,21 @@ color: #2e2f42;
 text-transform: capitalize;
 margin-bottom: 72px;
 }
-.member-info{
-    padding: 32px 0;
-    text-align: center;
-}
-.team-list{
+.team-list {
     display: flex;
     gap: 24px;
 }
 .team-list-item {
-background-color: #ffff;   
-width: calc((100% - 72px) / 4);
-border-radius: 0 0 4px 4px;
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #ffff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.member-info{
+    padding: 32px 0;
+    text-align: center;
+}
+
 .team-member {
 font-weight: 500;
 font-size: 20px;
@@ -208,6 +239,25 @@ margin-bottom: 8px;
 .team-members-position {
  line-height: 1.5;
  letter-spacing: 0.02em;
+}
+.sosial-list{
+    display: flex;
+    justify-content: center;
+    width: 232px;
+    height: 40px;
+    column-gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.sosial-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 .contacts {
 background-color: #2e2f42;
