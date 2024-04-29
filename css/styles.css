@@ -240,9 +240,10 @@ margin-bottom: 8px;
  line-height: 1.5;
  letter-spacing: 0.02em;
 }
-.sosial-list{
+.social-list{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 232px;
     height: 40px;
     column-gap: 24px;
@@ -251,13 +252,16 @@ margin-bottom: 8px;
     margin-top: 8px;
 }
 
-.sosial-list-link {
+.social-list-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+.social-list-icon{
+fill: #4d5ae5;
 }
 .contacts {
 background-color: #2e2f42;
