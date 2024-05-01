@@ -250,7 +250,7 @@ margin-bottom: 8px;
     align-items: center;
     width: 232px;
     height: 40px;
-    gap: 16px;
+    gap: 24px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8px;
@@ -369,7 +369,17 @@ left: 0;
     color: #f4f4fd;
     display: inline-block;
 }
-
+.social-list-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 40px;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
 .contacts-text {
     width: 264px;
     line-height: 1.5;
