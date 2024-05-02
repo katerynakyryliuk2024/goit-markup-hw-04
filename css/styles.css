@@ -417,6 +417,5 @@ color: #fff;
 }
 .footer-container{
     display: flex;
-    column-gap: 120px;
     align-items: baseline;
 }
